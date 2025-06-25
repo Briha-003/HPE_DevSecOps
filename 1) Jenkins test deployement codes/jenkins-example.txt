@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('checkin') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('stay') {
+            steps {
+                echo 'Happy World'
+            }
+        }
+        stage('checkout') {
+            steps {
+                echo 'Bye World'
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    environment {
+        MY_VAR = 'Jenkins Pipeline'
+    }
+    stages {
+        stage('Show Variable') {
+            steps {
+                echo "The value of MY_VAR is: ${env.MY_VAR}"
+            }
+        }
+    }
+}
